@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-2</title>
+</head>
+<body>
+    <form method="post" action="/users/login" target="_blank">
+        <!--! required zorunlu girilmesi gereken ozellikleri belirtir -->
+        <!--! minlength ile min karakter kısıtlaması demek -->
+        <!--! maxlength ile max karakter kısıtlaması demek -->
+        <input type="text" name="name"  placeholder="Adinizi giriniz"> <br> <br>
+        <input type="text" name="surname" placeholder="Soyadinizi giriniz"><br> <br>
+        <input type="number" name="salary" placeholder="Maasinizi giriniz"><br> <br>
+        <input type="email" name="email" required placeholder="Email adresinizi giriniz"><br> <br>
+        <input type="tel" name="phone" placeholder="Tel nonuzu giriniz"><br> <br>
+        <input type="password" name="password" 
+        required 
+        minlength="5"
+        maxlength="8"
+        placeholder="Sifrenizi giriniz"><br> <br>
+        <input type="search" name="search" placeholder="neyi aramak istiyorsunuz?"><br><br>
+        <input type="url"name="website"><br><br>
+        <!--!type gizli olması için  -->
+        <input type="hidden"name="code"><br><br>
+
+        <!--! radiobutton ile birkaç degerden sadece birisi secilebilir ancak kesinlikle name ifadesi olmali ve ayni olmali -->
+        <input type="radio" id="e" name="cinsiyet">
+        <label for="e">Erkek</label>
+
+        <input type="radio" id="k" name="cinsiyet" >
+        <label for="k" >Kadin</label>
+        <br>
+        <!--! checkbox kullanimi, checked tik atıilmis olur, disabled ifadesi de tik isareti kaldirilamaz olur  -->
+        <input type="checkbox" id="chk" checked disabled>
+        <label for="chk" name="user"> Maasimi eksiksiz aldim </label> 
+        <br>
+        <br>
+
+        <!--! Dosya eklemesi yapmak icin file kullaniyoruz -->
+        <input type="file" name="cv">
+        <br>
+        <!--! color ile renk secebiliyoruz  -->
+        <input type="color" name="color">
+        <br>
+        <!--! range ile oran yapilabilir  -->
+        <input type="range" name="range">
+        <br>
+        <!--! Tarih ve saat secilebilmesi icin  -->
+        <input type="date" name="date">
+        <br>
+        <input type="datetime-local" name="datetime-local">
+        <br>
+        <input type="time" name="time">
+        <br>
+        <input type="month" name="month">
+        <br>
+        <input type="week" name="week">
+        <br>
+        <br>
+
+        <!--! multiple size="5" ise select te 5 eleman gorunur demek  -->
+        <select name="cities" multiple size="5">
+            <option value="" disabled> Lutfen bir sehir seciniz</option>
+            <option value="06">Ankara</option>
+            <option value="61">Trabzon</option>
+            <option value="08">Artvin</option>
+            <option value="44">Malatya</option>
+            <option value="19">Corum</option>
+        </select>
+        <br>
+        <br>
+        <select name="meals" multiple size="2">
+            <option value="1">Hamsi Tava</option>
+            <option value="2">Hamsi Buglama</option>
+            <option value="3">Hamsi Izgara</option>
+            <option value="4">Hamsi Tursusu</option>
+        </select>
+        <br>
+        
+        <!--! readonly sadece gorunur olmasi  -->
+
+        <!--! submit tüm verileri backende gonderir. Reset tüm verileri sıfırlar -->
+
+        <textarea name="comment" id="com" cols="30" rows="10"></textarea>
+        <br>
+        <input type="button" value="Kaydet">
+        <input type="submit" value="Gonder">
+        <input type="reset" value="Temizle">
+
+
+
+
+
+    </form>
+    
+
+
+</body>
+</html>
