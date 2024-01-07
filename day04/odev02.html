@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <center>
+    <form>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="50">Kayıt Formu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="ad">Adı</label>
+                </td>
+                <td>    
+                    <input type="text" id="ad" placeholder="Adinizi giriniz">
+                </td>
+                <td colspan="1">Hobiler</td>
+                
+                <td rowspan="2">    
+                    <input type="checkbox" id="f" name="futbol">
+                    <label for="f">Futbol</label>
+                    <br>
+                    <input type="checkbox" id="v" name="voleybol">
+                    <label for="v">Voleybol</label>
+                    <br>
+                    <input type="checkbox" id="b" name="basketbol">
+                    <label for="b">Basketbol</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="soyadi">Soyadi</label>
+                </td>
+                <td>    
+                    <input type="text" name="soyadi" placeholder="Soyadinizi giriniz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cinsiyet">Cinsiyet</label>
+                </td>
+                <td>
+                    <label for="e">Erkek</label>
+                    <input type="radio" id="e" name="cinsiyet">
+                    <label for="k">Kadın</label>
+                    <input type="radio" id="k" name="cinsiyet">
+                </td>
+                <td> 
+                    <label for="pf">Profil Fotoğrafı</label>
+                </td>
+                <td>
+                    <input type="file" name="Profil fotoğrafı" id="pf" placeholder="Dosya Seçiniz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ilçe">İlçe</label>
+                </td>
+                <td>
+                    <select name="ilçe" id="ilçe" multiple size="2">
+                    <option value="1">Karşıyaka</option>
+                    <option value="1">Bornova</option>
+                    <option value="1">Urla</option>
+                </select>
+                </td>
+                <td>
+                    <label for="doğum tarihi">Doğum Tarihi</label>
+                </td>
+                <td>
+                    <input type="date" id="doğum tarihi">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="eposta">Eposta</label>
+                </td>
+                <td>
+                    <input type="email" id="eposta" required>
+                </td>
+                <td>
+                    <label for="adres">Adres</label>
+                </td>
+                <td rowspan="3">
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ks">Kişisel Site</label>
+                </td>
+                <td>
+                    <input type="url" name="kişisel site" id="ks">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefon">Telefon</label>
+                </td>
+                <td>
+                    <input type="tel" name="telefon" id="telefon">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td>
+                    <input type="button" value="Kayıt Ol" style="height:50px; width:100px;">
+                </td>                    
+            </tr>
+        </tbody>
+    </table>
+</form>
+</center>
+</body>
+</html>
